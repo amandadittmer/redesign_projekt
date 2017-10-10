@@ -50,6 +50,14 @@ header {
 }
 
 
+/*** Forside ***/
+
+#forside {
+ margin-top: 25vw;
+
+}
+
+
 /*** shop ***/
 
 #shop .content img {
@@ -216,6 +224,13 @@ table, td, tr {
 }
 
 
+#footer_index {
+    width: 90vw;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    align-content: center;
+}
 
 footer {
     text-align: center;
@@ -223,3 +238,4 @@ footer {
     background-color: #D6D6D6;
     max-width: 1024px;
 }
+

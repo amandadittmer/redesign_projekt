@@ -205,6 +205,18 @@ nav a:hover {
     }
 }
 
+table, td, tr {
+    font-family: Mukta;
+    font-size: 0.9rem;
+    padding-right: 5px;
+}
+
+.table_pris {
+    font-size: 0.8rem;
+}
+
+
+
 footer {
     text-align: center;
     padding: 5px;

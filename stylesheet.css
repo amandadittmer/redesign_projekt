@@ -169,6 +169,14 @@ video {
     display: block;
 }
 
+.koeb img {
+    width: 50%;
+}
+
+#koeb_ikoner {
+    width: 5%;
+}
+
 
 /*** kurv slut ***/
 

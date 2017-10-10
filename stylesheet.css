@@ -107,6 +107,8 @@ header {
 #om .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+
+
 }
 
 .hs-responsive-embed-youtube iframe,
@@ -137,7 +139,6 @@ video {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 /*** om slut **/
 

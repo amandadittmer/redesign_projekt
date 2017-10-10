@@ -1,0 +1,105 @@
+h1 {
+    font-family: Playfair Display SC;
+    font-size: 2.5rem;
+    color: #CFB9A0;
+}
+
+p,
+nav {
+    font-family: Mukta;
+    font-weight: 700;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1024px;
+    background-color: #ededed;
+}
+
+.forside img {
+    width: 100%;
+}
+
+
+/*** shop ***/
+
+#shop .content img {
+    width: 70%;
+}
+
+#shop .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#shop .content {
+    padding: 20px;
+    flex: 1 1 0;
+    justify-content: center;
+    text-align: center;
+}
+
+#shop {
+    background-color: white;
+}
+
+
+/*** shop slut ***/
+
+
+/* Navigation */
+
+nav {
+    background-color: #D6D6D6;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #1C1C1C;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: lightgrey;
+}
+
+
+/*** farve når man holder mus over tekst ***/
+
+@media screen and (min-width: 500px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    nav li {
+        flex: 1 1 0;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #D6D6D6;
+    max-width: 1024px;
+}

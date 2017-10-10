@@ -14,11 +14,6 @@ body {
     background-color: whitesmoke;
 }
 
-header {
-    text-align: center;
-    padding-top: 40px;
-}
-
 .container {
     margin: 0 auto;
     width: 90vw;
@@ -26,15 +21,36 @@ header {
     background-color: #ededed;
 }
 
+
+/*** splash ***/
+
+header {
+    width: 90vw;
+    height: 51vw;
+    background-image: url(splash/desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1024px;
+    max-height: 576px;
+}
+
+
+/***splash slut ***/
+
 .forside img {
     width: 100%;
+}
+
+.content {
+    padding: 10px;
 }
 
 
 /*** shop ***/
 
 #shop .content img {
-    width: 70%;
+    /*    width: 70%;*/
+    /*    padding-bottom: 30px;*/
 }
 
 #shop .sectionwrapper {
@@ -43,18 +59,105 @@ header {
 }
 
 #shop .content {
-    padding: 20px;
-    flex: 1 1 0;
+    padding: 10px;
+    /*    flex: 1 1 0;*/
+    flex-basis: 207px;
+    flex-grow: 1;
     justify-content: center;
     text-align: center;
 }
 
 #shop {
-    background-color: white;
+    background-color: #ededed;
+}
+
+#shop h2 {
+    font-family: Mukta;
+    color: #CFB9A0;
+}
+
+#shop p {
+    font-family: Mukta;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+#shop .semere {
+    float: right;
+    text-decoration: none;
+    color: #1C1C1C;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.shopimg img {
+    height: 100px;
 }
 
 
 /*** shop slut ***/
+
+
+/*** om ***/
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hs-responsive-embed-youtube iframe,
+video {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.hs-responsive-embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    padding-top: 25px;
+}
+
+.videotekst {
+    padding-top: 20px;
+}
+
+#om content {}
+
+#om img {
+    width: 100%
+}
+
+#om .contentwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*** om slut **/
+
+
+/*** kurv ***/
+
+#kurv .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#kurv .content {
+    flex-grow: 1;
+}
+
+.koeb {
+    text-align: right;
+    padding-top: 100px;
+    padding-right: 20px;
+    display: block;
+}
+
+
+/*** kurv slut ***/
 
 
 /* Navigation */
@@ -81,7 +184,7 @@ nav a {
 }
 
 nav a:hover {
-    color: lightgrey;
+    color: gray;
 }
 
 

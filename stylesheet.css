@@ -6,8 +6,55 @@ h1 {
 
 p,
 nav {
-    font-family: Mukta;
+    font-family: Open Sans;
     font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-family: Open Sans;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #D6D6D6;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #1C1C1C;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+
+/*** farve når man holder mus over tekst ***/
+
+@media screen and (min-width: 500px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    nav li {
+        flex: 1 1 0;
+    }
 }
 
 span {
@@ -96,8 +143,15 @@ Forside ***/
     float: right;
     text-decoration: none;
     color: #1C1C1C;
-    padding-top: 20px;
-    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #CFB9A0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px #888888;
+    font-family: Open Sans;
+    font-size: 0.8rem;
 }
 
 .shopimg img {
@@ -135,7 +189,19 @@ video {
     font-size: 0.8rem;
 }
 
-#om .content {}
+#om .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+#om iframe {
+    padding-bottom: 10px;
+}
+
+#om .maps {
+    margin-left: auto;
+}
 
 #om img {
     width: 100%
@@ -144,6 +210,24 @@ video {
 #om .contentwrapper {
     display: flex;
     flex-wrap: wrap;
+}
+
+table,
+td,
+tr {
+    font-family: Open Sans;
+    font-size: 0.9rem;
+    padding-right: 5px;
+}
+
+th {
+    text-align: left;
+    font-family: Open Sans;
+    padding-bottom: 5px;
+}
+
+.table_pris {
+    font-size: 0.8rem;
 }
 
 
@@ -160,6 +244,7 @@ video {
 #kurv .content {
     flex-grow: 1;
     font-family: Mukta:200;
+    padding-left: 10px;
 }
 
 .koeb {
@@ -167,71 +252,148 @@ video {
     padding-top: 100px;
     padding-right: 20px;
     display: block;
+    margin-left: auto;
 }
 
 .koeb img {
-    width: 50%;
+    width: 200px;
+    ;
 }
 
 #koeb_ikoner {
-    width: 5%;
+    width: 30px;
 }
 
 
 /*** kurv slut ***/
 
 
-/* Navigation */
+/*** ure ***/
 
-nav {
-    background-color: #D6D6D6;
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0;
+#ure .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav a {
-    text-decoration: none;
-    text-align: center;
-    color: #1C1C1C;
-    display: block;
+#ure .content {
     padding: 10px;
+    /*    flex: 1 1 0;*/
+    flex-basis: 207px;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
 }
 
-nav a:hover {
-    color: gray;
+#ure {
+    background-color: #ededed;
 }
 
-
-/*** farve når man holder mus over tekst ***/
-
-@media screen and (min-width: 500px) {
-    nav ul {
-        display: flex;
-        justify-content: center;
-    }
-    nav li {
-        flex: 1 1 0;
-    }
-}
-
-table,
-td,
-tr {
+#ure h2 {
     font-family: Mukta;
-    font-size: 0.9rem;
-    padding-right: 5px;
+    color: #CFB9A0;
 }
 
-.table_pris {
+#ure p {
+    font-family: Open Sans;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+#ure .semere {
+    float: right;
+    text-decoration: none;
+    color: #1C1C1C;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #CFB9A0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px #888888;
+    font-family: Open Sans;
     font-size: 0.8rem;
 }
+
+.ureimg img {
+    height: 150px;
+    padding-bottom: 30px;
+}
+
+
+/*** ure slut ***/
+
+
+/*** dameure ***/
+
+#dameure .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+#dameure .content {
+    /*    flex: 1 1 0;*/
+    flex-basis: 207px;
+    flex-grow: 1;
+    font-family: Open Sans;
+    font-size: 0.8rem;
+}
+
+.dameureimg img {
+    height: 150px;
+    padding-bottom: 30px;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.dameureimg {
+    border: solid;
+    border-color: #D6D6D6;
+    background-color: whitesmoke;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/*** dameure slut ***/
+
+
+/*** danielwellington ***/
+
+#danielwellington .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+#danielwellington .content {
+    /*    flex: 1 1 0;*/
+    flex-basis: 207px;
+    flex-grow: 1;
+    font-family: Open Sans;
+    font-size: 0.8rem;
+}
+
+#danielwellington h3 {
+    color: #CFB9A0;
+    padding-right: 10px;
+}
+
+#danielwellington p {
+    color: #1c1c1c;
+    padding-right: 10px;
+}
+
+#danielwellington .koeb {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+}
+
+
+/*** danielwellington slut ***/
 
 #footer_index {
     width: 90vw;
@@ -246,4 +408,8 @@ footer {
     padding: 5px;
     background-color: #D6D6D6;
     max-width: 1024px;
+}
+
+footer p {
+    font-family: Mukta;
 }

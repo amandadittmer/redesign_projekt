@@ -87,7 +87,7 @@ Forside ***/
 }
 
 #shop p {
-    font-family: Mukta;
+    font-family: Open Sans;
     font-size: 0.8rem;
     font-weight: 200;
 }
@@ -130,11 +130,12 @@ video {
 }
 
 .videotekst {
-    padding-top: 20px;
-    font-family: Mukta:200;
+    padding-bottom: 10px;
+    font-family: Open Sans;
+    font-size: 0.8rem;
 }
 
-#om content {}
+#om .content {}
 
 #om img {
     width: 100%
